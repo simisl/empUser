@@ -1,0 +1,21 @@
+<div class="container">
+
+
+<app-header></app-header>
+<div class="actionBtn">
+  <ul>
+    <li>
+      <button mat-raised-button [ngClass]="{selected:list}" [routerLink]="'/employees-list'"> List View</button>
+    </li>
+    <li>
+      <button (click)="openForm()" mat-raised-button [ngClass]="{selected:new}"> + New Employee</button>
+    </li>
+    <li>
+      <button mat-raised-button [ngClass]="{selected:card}" [routerLink]="'/employee-card'"> Card View</button>
+    </li>
+  </ul>
+</div>
+<div class="footerContainer">
+  <app-footer></app-footer>
+</div>
+</div>

@@ -1,0 +1,13 @@
+table{
+  width:100%;
+  margin-top:20px;
+  table-layout: fixed;
+}
+
+.empty{
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  align-items: center;
+}
+

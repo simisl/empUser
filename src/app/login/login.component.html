@@ -1,0 +1,26 @@
+<div class="main">
+  <div class="loginForm">
+    <h1>
+      LOGIN
+    </h1>
+    <form [formGroup] = "loginForm" (ngSubmit)="login(loginForm.value)">
+      <input type="text" placeholder="UserName" formControlName = "username" id="username">
+      <span *ngIf="loginForm.controls['username'].invalid && loginForm.controls['username'].dirty || loginForm.controls['username'].touched">
+        <span *ngIf="loginForm.controls['username'].errors?.['required']" class="error">
+          Name is required
+        </span>
+      </span>
+      <input type="password" placeholder="Password" formControlName = "password">
+      <span *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.dirty || loginForm.get('password')?.touched">
+        <span *ngIf="loginForm.get('password')?.errors?.['required']" class="error">
+          Password  required
+        </span>
+      </span>
+      <div class="error message">{{message}}</div>
+      <button type="submit" >LOGIN</button>
+    </form>
+
+  </div>
+</div>
+
+

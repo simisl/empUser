@@ -1,0 +1,39 @@
+
+.empTable{
+  margin-left:20px;
+  margin-right:20px;
+}
+.empty{
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  align-items: center;
+}
+mat-card{
+  max-width: 400px;
+  margin-bottom: 8px;
+  margin-top:8px;
+  border-top: 1px solid lightgray;
+}
+.date{
+  color: red;
+}
+.close{
+  width:20px;
+  height: 20px;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+.btn{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 0;
+  font-weight: 550;
+  cursor: pointer;
+}
+p {
+  padding-top: 20px;
+}

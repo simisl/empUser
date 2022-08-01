@@ -1,0 +1,39 @@
+<h1 >Employee Registration Form</h1>
+<form class="formCls" [formGroup]="userForm" (ngSubmit)="save(userForm.value)">
+
+  <label>Name</label>
+  <input type="text" formControlName="name"  #cancelbtn>
+  <span *ngIf="userForm.get('name')?.invalid && userForm.get('name')?.dirty || userForm.get('name')?.touched">
+    <span *ngIf="userForm.get('name')?.errors?.['required']" class="error">
+      Name is required
+    </span>
+  </span>
+  <label>Position</label>
+  <input type="text" formControlName="position">
+  <span *ngIf="userForm.get('position')?.invalid && userForm.get('position')?.dirty || userForm.get('position')?.touched">
+    <span *ngIf="userForm.get('position')?.errors?.['required']" class="error">
+      Position is required
+    </span>
+  </span>
+  <label>About</label>
+  <input type="text" formControlName="about">
+  <span *ngIf="userForm.get('about')?.invalid && userForm.get('about')?.dirty || userForm.get('about')?.touched">
+    <span *ngIf="userForm.get('about')?.errors?.['required']" class="error">
+      About is required
+    </span>
+  </span>
+  <label>Joining Date</label>
+  <input type="date" formControlName="joining_date">
+  <span *ngIf="userForm.get('joining_date')?.invalid && userForm.get('joining_date')?.dirty || userForm.get('joining_date')?.touched">
+    <span *ngIf="userForm.get('joining_date')?.errors?.['required']" class="error">
+      Joining date is required
+    </span>
+  </span>
+
+  <div class="btnDiv" mat-dialog-actions>
+    <button mat-raised-button class="cancel" mat-dialog-close > Cancel</button>
+    <button mat-raised-button class="save"  type="submit">Save</button>
+
+  </div>
+
+</form>
