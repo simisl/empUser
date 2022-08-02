@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1659461933094,
+  "timestamp": 1659462471776,
   "index": "https://simisl.github.io/empUser/index.html",
   "assetGroups": [
     {
@@ -64,7 +64,7 @@
     "https://simisl.github.io/empUser/assets/menu.png": "e6afb88ff4bfbdccf6aae3f67e290181378e4d3e",
     "https://simisl.github.io/empUser/assets/user.png": "88455313f72d74e43fdc1f58bce0f65bcd36254a",
     "https://simisl.github.io/empUser/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://simisl.github.io/empUser/index.html": "d66826fa3ab51311a2c3db6085c7ad7e900dd6b9",
+    "https://simisl.github.io/empUser/index.html": "f5ccce4b37acfc8a8fd1496576125b93b4010a44",
     "https://simisl.github.io/empUser/main.a714f673500f0eec.js": "a6330f4678e56839a45a4507dbb33ea7a3595e10",
     "https://simisl.github.io/empUser/manifest.webmanifest": "ade541b3bb2b2cc73569fd142c6221ac816455de",
     "https://simisl.github.io/empUser/polyfills.a409f8a2dd8bc0a8.js": "38ebdaad762b68a478f2f4e96ca0a5c3d42d9f38",
