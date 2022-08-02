@@ -1,11 +1,4 @@
-// .mainlogo{
-//   width:30%;
-//   // height:570px;
-//   background: url('/assets/ebox.png');
-//   background-repeat: no-repeat;
-//   background-size: contain;
-//   // border:3px solid green;
-// }
+
 ul{
   list-style: none;
   // width:100%;
@@ -62,3 +55,54 @@ ul li{
 hr{
   clear: both;
 }
+.hamMenu{
+  display: none;
+  float: right;
+  // margin-right: 41px;
+  height: 29px;
+  width: 35px;
+}
+.menuImg{
+  width:100%;
+}
+@media screen and (max-width: 800px) {
+  .menu{
+    border: 1px solid rgba(56,182,255,255);
+    display: none;
+    position: absolute;
+    height: 128px;
+    right: 0px;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .btnMenu{
+    border:0;
+    background-color: rgba(56,182,255,255);
+  }
+  ul{
+    padding: 0;
+  }
+  ul li{
+    display: block;
+    padding: 20px;
+  }
+  .hamMenu{
+    display: block;
+    // height: 154px;
+    position: relative;
+  }
+  ul li:hover{
+    background-color: rgba(56,182,255,255);
+    color:white;
+  }
+  ul li{
+    background-color: aliceblue;
+    margin-bottom: 5px;
+  }
+  .rightSide{
+    padding-right: 0px;
+  }
+
+}
+

@@ -37,7 +37,7 @@ export class EmployeelistComponent implements OnInit {
     data = data.trim();
     data = data.toLowerCase();
     if(data.match(/^[^a-zA-Z0-9]+$/)){
-      this.router.navigate(['notfound'])
+      this.router.navigate(['error'])
     }
     else{
 

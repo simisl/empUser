@@ -1,19 +1,22 @@
 <div class="header">
   <div class="leftSide">
-    <img src="/assets/ebox.png" class="imglogo"/>
+    <img src="assets/ebox.png" class="imglogo"/>
   </div>
   <div class="rightSide">
     <input type="text" placeholder="search..." [(ngModel)]="search" (keyup)="sendData()">
   </div>
 </div>
 <hr>
-<div class="menu">
+<div class="hamMenu" #ham >
+  <button (click)="openMenu()" class="btnMenu">
+    <img src="assets/menu.png" class="menuImg">
+  </button>
+</div>
+<div class="menu"  #menu>
   <ul>
     <li [routerLink]="['/employees']" >Employees</li>
-
     <li (click)="login()" *ngIf="!authenticated">Login</li>
     <li (click)="logout()" *ngIf="authenticated">Logout</li>
-
   </ul>
 </div>
 <hr>

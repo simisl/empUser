@@ -10,11 +10,7 @@ import { ErrorpageComponent } from './errorpage/errorpage.component';
 import { AuthGuard } from './auth/auth.guard';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: HomeComponent,
-    pathMatch: 'full'
-  },
+
   {
     path:'home',
     component: HomeComponent,
@@ -52,8 +48,13 @@ const routes: Routes = [
     canActivate: [AuthGuard]
   },
   {
+    path: '',
+    redirectTo: '/home',
+    pathMatch:'full'
+  },
+  {
     path:'**',
-    component: ErrorpageComponent,
+    component: EmployeelistComponent,
     canActivate: [AuthGuard]
   }
 ];

@@ -24,6 +24,8 @@ import { EmployeelistComponent } from './employeelist/employeelist.component';
 import { EmployeecardComponent } from './employeecard/employeecard.component';
 import { EmployeeregistrationComponent } from './employeeregistration/employeeregistration.component';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -52,7 +54,13 @@ import { ErrorpageComponent } from './errorpage/errorpage.component';
     MatCardModule,
     MatFormFieldModule,
     MatDividerModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
